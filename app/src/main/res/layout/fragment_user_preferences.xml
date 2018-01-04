@@ -1,0 +1,44 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserPreferencesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Stats"/>
+        <EditText
+            android:id="@+id/userStatsText"
+            android:layout_width="match_parent"
+            android:hint="User stats URL here"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Live Stats"/>
+        <EditText
+            android:id="@+id/siteStatsText"
+            android:layout_width="match_parent"
+            android:hint="Live Stats URL here"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address"/>
+        <EditText
+            android:id="@+id/userAddressText"
+            android:layout_width="match_parent"
+            android:hint="Enter your address here"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/saveAddressButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"/>
+    </LinearLayout>
+</FrameLayout>

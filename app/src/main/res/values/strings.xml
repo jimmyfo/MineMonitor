@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MineMonitor</string>
+
+    <string name="RefreshButton">Refresh</string>
+
+    <string name="WarningDialog">NEVER, EVER share your private keys, seeds, or passwords on any app or website!</string>
+
+    <string name="ContactEmail">dontusethisforanythingelse@gmail.com</string>
+    <string name="DevDonationAEON">WmsAsmq82UbPwn4WVBsKtaGAKmNmymQmM3deXuTx7WpxZmECePr8T86eXCnGYyJSRDSzUdoVhtcsLBrV5YKHCESP1VTFjjdSA</string>
+    <string name="DevDonationXMR">4AQDVCgpFDxVUvttqFynZVNFCyky1TU4Bct8Gq4ovt1F8oHsNazNcaUGeRLvGAdqEvJdx8WMTBWfGVfbi4YzZzRgEfJL6SH</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
