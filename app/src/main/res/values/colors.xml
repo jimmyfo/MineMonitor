@@ -3,6 +3,9 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="red">#FF0000</color>
+    <color name="green">#00FF00</color>
     
     <color name="aeonLightBlue">#5fbcd3</color>
     <color name="aeonMedBlue">#2c89a0</color>

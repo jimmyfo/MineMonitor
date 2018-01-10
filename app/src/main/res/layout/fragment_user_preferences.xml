@@ -7,6 +7,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="2dp"
         android:orientation="vertical">
         <TextView
             android:layout_width="match_parent"
@@ -16,15 +17,17 @@
             android:id="@+id/userStatsText"
             android:layout_width="match_parent"
             android:hint="User stats URL here"
+            android:textSize="11sp"
             android:layout_height="wrap_content" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Live Stats"/>
+            android:text="Pool Stats"/>
         <EditText
             android:id="@+id/siteStatsText"
             android:layout_width="match_parent"
-            android:hint="Live Stats URL here"
+            android:hint="Stats URL here"
+            android:textSize="11sp"
             android:layout_height="wrap_content" />
         <TextView
             android:layout_width="match_parent"
@@ -34,11 +37,69 @@
             android:id="@+id/userAddressText"
             android:layout_width="match_parent"
             android:hint="Enter your address here"
+            android:textSize="11sp"
             android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notifications"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/notificationBlockFoundCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Block Found"/>
+            <Spinner
+                android:id="@+id/notificationBlockFoundSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></Spinner>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/notificationBlockMaturedCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Block Matured"/>
+            <Spinner
+                android:id="@+id/notificationBlockMaturedSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></Spinner>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/notificationPaymentReceivedCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment Received"/>
+            <Spinner
+                android:id="@+id/notificationPaymentReceivedSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></Spinner>
+        </LinearLayout>
         <Button
             android:id="@+id/saveAddressButton"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_height="40dp"
+            android:textSize="11sp"
             android:text="Save"/>
     </LinearLayout>
 </FrameLayout>

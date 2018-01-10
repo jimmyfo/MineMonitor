@@ -9,10 +9,165 @@
     tools:context="com.jimmyfo.cyrpto.minemonitor.MainActivity">
 
     <LinearLayout
+        android:id="@+id/rootView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Network"
+                    style="@style/TextColor"/>
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border">
+                    <TableRow>
+                        <TextView
+                            android:text="Hash Rate: "
+                            style="@style/TextColor"/>
+                        <TextView
+                            android:id="@+id/networkHashRateText"
+                            android:text="N/A"
+                            style="@style/TextColor"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="Found: "
+                            style="@style/TextColor"/>
+                        <TextView
+                            android:id="@+id/networkFoundText"
+                            android:text="N/A"
+                            style="@style/TextColor"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="Difficulty: "
+                            style="@style/TextColor"/>
+                        <TextView
+                            android:id="@+id/difficultyText"
+                            android:text="N/A"
+                            style="@style/TextColor"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="Height: "
+                            style="@style/TextColor"/>
+                        <TextView
+                            android:id="@+id/heightText"
+                            android:text="N/A"
+                            style="@style/TextColor"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="Last Reward: "
+                            style="@style/TextColor"/>
+                        <TextView
+                            android:id="@+id/lastRewardText"
+                            android:text="N/A"
+                            style="@style/TextColor"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="Last Hash: "
+                            style="@style/TextColor"/>
+                        <TextView
+                            android:id="@+id/lastHashText"
+                            android:text="N/A"
+                            style="@style/TextColor"/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pool"
+                    style="@style/TextColor"/>
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border">
+                    <TableRow>
+                        <TextView
+                            android:text="Hash Rate: "
+                            style="@style/TextColor"/>
+                        <TextView
+                            android:id="@+id/poolHashRateText"
+                            android:text="N/A"
+                            style="@style/TextColor"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="Found: "
+                            style="@style/TextColor"/>
+                        <TextView
+                            android:id="@+id/poolFoundText"
+                            android:text="N/A"
+                            style="@style/TextColor"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="Miners: "
+                            style="@style/TextColor"/>
+                        <TextView
+                            android:id="@+id/minersText"
+                            android:text="N/A"
+                            style="@style/TextColor"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="Pool Fee: "
+                            style="@style/TextColor"/>
+                        <TextView
+                            android:id="@+id/poolFeeText"
+                            android:text="N/A"
+                            style="@style/TextColor"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="Block Every: "
+                            style="@style/TextColor"/>
+                        <TextView
+                            android:id="@+id/blockEveryText"
+                            android:text="N/A"
+                            style="@style/TextColor"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="Difficulty: "
+                            style="@style/TextColor"/>
+                        <TextView
+                            android:id="@+id/currentDifficultyText"
+                            android:text="N/A"
+                            style="@style/TextColor"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:text="Hashes: "
+                            style="@style/TextColor"/>
+                        <TextView
+                            android:id="@+id/hashesSubmittedText"
+                            android:text="N/A"
+                            style="@style/TextColor"/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

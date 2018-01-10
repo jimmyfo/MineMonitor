@@ -9,6 +9,28 @@
     <string name="DevDonationAEON">WmsAsmq82UbPwn4WVBsKtaGAKmNmymQmM3deXuTx7WpxZmECePr8T86eXCnGYyJSRDSzUdoVhtcsLBrV5YKHCESP1VTFjjdSA</string>
     <string name="DevDonationXMR">4AQDVCgpFDxVUvttqFynZVNFCyky1TU4Bct8Gq4ovt1F8oHsNazNcaUGeRLvGAdqEvJdx8WMTBWfGVfbi4YzZzRgEfJL6SH</string>
 
+    <string name="NewBlockTitle">A new block has been mined!</string>
+    <string name="NewBlockText">Your configured pool has successfully mined a new block</string>
+
+    <string name="MaturedBlockTitle">A mined block has been accepted!</string>
+    <string name="MaturedBlockText">Your configured pool has successfully been verified a mined block</string>
+
+    <string name="PaidTitle">You have been paid!</string>
+    <string name="PaidText">Your configured pool has successfully paid you for your contributions.</string>
+
+    <!--https://getmonero.org/legal/copyright-->
+    <string name="AeonLink">http://www.aeon.cash/</string>
+    <string name="MoneroLink">https://getmonero.org/</string>
+
+    <string-array name="notification_periods">
+        <item>5 min</item>
+        <item>10 min</item>
+        <item>15 min</item>
+        <item>30 min</item>
+        <item>1 hour</item>
+        <item>1 day</item>
+    </string-array>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

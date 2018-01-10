@@ -8,57 +8,57 @@ import java.math.BigDecimal;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class PoolCharts {
     @JsonProperty("hashrate")
-    private long[][] HashRate;
+    private String[][] HashRate;
 
     @JsonProperty("workers")
-    private long[][] Workers;
+    private String[][] Workers;
 
     @JsonProperty("difficulty")
-    private long[][] Difficulty;
+    private String[][] Difficulty;
 
     @JsonProperty("price")
-    private BigDecimal[][] Price;
+    private String[][] Price;
 
     @JsonProperty("profit")
-    private BigDecimal[][] Profit;
+    private String[][] Profit;
 
-    public long[][] getHashRate() {
+    public String[][] getHashRate() {
         return HashRate;
     }
 
-    public long[][] getWorkers() {
+    public String[][] getWorkers() {
         return Workers;
     }
 
-    public long[][] getDifficulty() {
+    public String[][] getDifficulty() {
         return Difficulty;
     }
 
-    public BigDecimal[][] getPrice() {
+    public String[][] getPrice() {
         return Price;
     }
 
-    public BigDecimal[][] getProfit() {
+    public String[][] getProfit() {
         return Profit;
     }
 
-    public void setHashRate(long[][] hashRate) {
+    public void setHashRate(String[][] hashRate) {
         HashRate = hashRate;
     }
 
-    public void setWorkers(long[][] workers) {
+    public void setWorkers(String[][] workers) {
         Workers = workers;
     }
 
-    public void setDifficulty(long[][] difficulty) {
+    public void setDifficulty(String[][] difficulty) {
         Difficulty = difficulty;
     }
 
-    public void setPrice(BigDecimal[][] price) {
+    public void setPrice(String[][] price) {
         Price = price;
     }
 
-    public void setProfit(BigDecimal[][] profit) {
+    public void setProfit(String[][] profit) {
         Profit = profit;
     }
 }

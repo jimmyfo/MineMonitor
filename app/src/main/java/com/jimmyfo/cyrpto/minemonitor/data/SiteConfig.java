@@ -30,8 +30,9 @@ public class SiteConfig {
     @JsonProperty("depth")
     private long Depth;
 
-    @JsonProperty("donation")
-    private String[] Donation;
+    // TODO
+//    @JsonProperty("donation")
+//    private String[] Donation;
 
     @JsonProperty("version")
     private String Version;
@@ -74,9 +75,9 @@ public class SiteConfig {
         return Depth;
     }
 
-    public String[] getDonation() {
-        return Donation;
-    }
+//    public String[] getDonation() {
+//        return Donation;
+//    }
 
     public String getVersion() {
         return Version;
@@ -122,9 +123,9 @@ public class SiteConfig {
         Depth = depth;
     }
 
-    public void setDonation(String[] donation) {
-        Donation = donation;
-    }
+    //public void setDonation(String[] donation) {
+    //    Donation = donation;
+    //}
 
     public void setVersion(String version) {
         Version = version;
