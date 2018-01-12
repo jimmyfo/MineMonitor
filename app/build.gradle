@@ -7,8 +7,8 @@ android {
         applicationId "com.jimmyfo.cyrpto.minemonitor"
         minSdkVersion 19
         targetSdkVersion 25
-        versionCode 1
-        versionName "1.0"
+        versionCode 4
+        versionName '1.2'
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -17,7 +17,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-
     // Can also use pickfirst instead of exclude
     //https://stackoverflow.com/questions/20827885/android-studio-0-4-duplicate-files-copied-in-apk-meta-inf-license-txt
     packagingOptions {
@@ -31,6 +30,9 @@ android {
         exclude 'META-INF/license.txt'
         exclude 'META-INF/dependencies.txt'
         exclude 'META-INF/LGPL2.1'
+        exclude 'lib/README.txt'
+    }
+    productFlavors {
     }
 }
 
@@ -41,14 +43,13 @@ allprojects {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'org.apache.directory.studio:org.apache.commons.io:2.4'
+    compile 'commons-io:commons-io:2.4'
     compile 'com.mcxiaoke.volley:library:1.0.19'
     compile 'com.fasterxml.jackson.core:jackson-databind:2.9.1'
     compile 'com.android.support:support-v4:25.3.1'
