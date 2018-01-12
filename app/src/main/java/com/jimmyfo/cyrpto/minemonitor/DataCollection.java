@@ -94,7 +94,8 @@ public class DataCollection {
         //mgr.setRepeating(AlarmManager.ELAPSED_REALTIME_WAKEUP, SystemClock.elapsedRealtime() + Integer.parseInt(Enums.BaseNotificationInterval.toString()), Integer.parseInt(Enums.BaseNotificationInterval.toString()), pi);
 
         // Must be 5 seconds or above
-        mgr.set(AlarmManager.ELAPSED_REALTIME_WAKEUP, SystemClock.elapsedRealtime() + Integer.parseInt(Enums.BaseNotificationInterval.toString()), pi);
+        //mgr.set(AlarmManager.ELAPSED_REALTIME_WAKEUP, SystemClock.elapsedRealtime() + Integer.parseInt(Enums.BaseNotificationInterval.toString()), pi);
+        mgr.set(AlarmManager.ELAPSED_REALTIME_WAKEUP, SystemClock.elapsedRealtime() + 5000, pi);
     }
 
     public void UpdateWebStats(final boolean calledManually){
@@ -409,28 +410,31 @@ public class DataCollection {
 
                 switch (type){
                     case "found":
-                        Log.d("Notification", "Found");
+                        Log.d("Notification", "Found was " + new Date(appSettings.getNextFoundNotification()));
                         appSettings.setPendingFoundNotification(false);
                         appSettings.setNextFoundNotification(DataCollection.GetNextNotificationTime(new Date(), appSettings.getNotifyFoundInterval()));
 
                         editor.putBoolean(AppSettings.PendingFoundNotificationName, appSettings.getPendingFoundNotification());
                         editor.putLong(AppSettings.NextFoundNotificationName, appSettings.getNextFoundNotification());
+                        Log.d("Notification", "Found is " + new Date(appSettings.getNextFoundNotification()));
                         break;
                     case "matured":
-                        Log.d("Notification", "Matured");
+                        Log.d("Notification", "Matured was " + new Date(appSettings.getNextMaturedNotification()));
                         appSettings.setPendingMaturedNotification(false);
                         appSettings.setNextMaturedNotification(DataCollection.GetNextNotificationTime(new Date(), appSettings.getNotifyMaturedInterval()));
 
                         editor.putBoolean(AppSettings.PendingMaturedNotificationName, appSettings.getPendingMaturedNotification());
                         editor.putLong(AppSettings.NextMaturedNotificationName, appSettings.getNextMaturedNotification());
+                        Log.d("Notification", "Matured is " + new Date(appSettings.getNextMaturedNotification()));
                         break;
                     case "paid":
-                        Log.d("Notification", "Paid");
+                        Log.d("Notification", "Paid was " + new Date(appSettings.getNextPaymentNotification()));
                         appSettings.setPendingPaymentNotification(false);
                         appSettings.setNextPaymentNotification(DataCollection.GetNextNotificationTime(new Date(), appSettings.getNotifyPaymentInterval()));
 
                         editor.putBoolean(AppSettings.PendingPaymentNotificationName, appSettings.getPendingPaymentNotification());
                         editor.putLong(AppSettings.NextPaymentNotificationName, appSettings.getNextPaymentNotification());
+                        Log.d("Notification", "Paid is " + new Date(appSettings.getNextPaymentNotification()));
                         break;
                 }
 

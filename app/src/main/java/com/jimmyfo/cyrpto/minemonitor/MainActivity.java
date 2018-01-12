@@ -210,6 +210,9 @@ public class MainActivity extends AppCompatActivity
 
         // Set up data collection class
         dataCollection = new DataCollection(getApplicationContext(), findViewById(R.id.rootView), hashrateChart, paymentsChart);
+
+        // Technically, we should only start the alarm when onPause/onStop/onDestroy, and stop it onResume.
+        // This is because we already have a handler running to update the UI.
         dataCollection.StartAlarm();
     }
 
