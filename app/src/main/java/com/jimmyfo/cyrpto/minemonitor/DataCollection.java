@@ -94,8 +94,8 @@ public class DataCollection {
         //mgr.setRepeating(AlarmManager.ELAPSED_REALTIME_WAKEUP, SystemClock.elapsedRealtime() + Integer.parseInt(Enums.BaseNotificationInterval.toString()), Integer.parseInt(Enums.BaseNotificationInterval.toString()), pi);
 
         // Must be 5 seconds or above
-        //mgr.set(AlarmManager.ELAPSED_REALTIME_WAKEUP, SystemClock.elapsedRealtime() + Integer.parseInt(Enums.BaseNotificationInterval.toString()), pi);
-        mgr.set(AlarmManager.ELAPSED_REALTIME_WAKEUP, SystemClock.elapsedRealtime() + 5000, pi);
+        mgr.set(AlarmManager.ELAPSED_REALTIME_WAKEUP, SystemClock.elapsedRealtime() + Integer.parseInt(Enums.BaseNotificationInterval.toString()), pi);
+        //mgr.set(AlarmManager.ELAPSED_REALTIME_WAKEUP, SystemClock.elapsedRealtime() + 5000, pi);
     }
 
     public void UpdateWebStats(final boolean calledManually){
